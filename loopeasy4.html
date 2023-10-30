@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let insertnum = prompt("Please insert the number");
+      const maxnum = 1000;
+      let expo = 0;
+
+      if (insertnum !== 1 || insertnum < maxnum) {
+        while (Math.pow(insertnum, expo) < maxnum) {
+          expo++;
+        }
+        alert("1000 гэдэг тооноос их эхний зэрэг бол " + expo);
+      } else {
+        alert("Та буруу тоо оруулсан байна.");
+      }
+    </script>
+  </body>
+</html>
