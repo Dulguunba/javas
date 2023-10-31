@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = prompt("Please insert the first number");
+      let b = prompt("Please insert the second number");
+      let num = 1;
+      let result;
+      while (num <= Math.min(a, b)) {
+        if (a % num == 0 && b % num == 0) {
+          result = num;
+        }
+        num++;
+      }
+      alert(result);
+    </script>
+  </body>
+</html>
