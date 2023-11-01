@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = prompt("Please insert the number");
+      let pal = 0;
+      let a;
+      while (num > 0) {
+        a = num % 10;
+        pal = pal * 10 + a;
+        num = (num - a) / 10;
+      }
+      //   for (let a = num % 10; (a = 0 || a >= 1); a = num % 10) {
+      //     pal = pal * 10 + a;
+      //     num = (num - a) / 10;
+      //   }
+      alert(pal);
+      //   if (num === pal) {
+      //     alert("yes");
+      //   } else {
+      //     alert("no");
+      //   }
+    </script>
+  </body>
+</html>
